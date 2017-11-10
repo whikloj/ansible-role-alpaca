@@ -1,24 +1,35 @@
 ---
 
+# Build from source
 alpaca_from_source: no
 
+# Version tag to install
 alpaca_version: master
+
+# Location to install to
 alpaca_clone_directory: /opt/alpaca
 
+# Alpaca maven repository
 alpaca_karaf_repos:
   - mvn:ca.islandora.alpaca/islandora-karaf/LATEST/xml/features
 
+# Alpaca features to install
 alpaca_features:
   - islandora-http-client
   - islandora-connector-broadcast
   - islandora-indexing-triplestore
   - islandora-indexing-fcrepo
 
+# Where karaf is installed
 alpaca_karaf_dir: /opt/karaf
+# Karaf /etc (configuration) dir
 alpaca_karaf_etc_dir: "{{ alpaca_karaf_dir }}/etc"
+# Karaf username
 alpaca_karaf_user: karaf
+# Where the local maven repo is
 alpaca_local_mvn_path: /opt/maven/repo
 
+# Settings for various features configuration files.
 alpaca_settings:
   - pid: ca.islandora.alpaca.connector.broadcast
     settings:

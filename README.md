@@ -74,7 +74,7 @@ alpaca_settings:
 
 ## Dependencies
 
-* [islandora.karaf](https://github.com/Islandora-DevOps/ansible-role-karaf)
+* Apache Karaf
   
 ## Example Playbook
 

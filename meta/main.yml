@@ -20,5 +20,4 @@ galaxy_info:
     - karaf
     - server
     - installer
-dependencies:
-  - { role: islandora.tomcat8 }
+dependencies: []
