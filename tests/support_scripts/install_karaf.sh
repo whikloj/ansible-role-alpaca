@@ -13,7 +13,7 @@ ln -s "$HOME/apache-karaf-$KARAF_VERSION" $KARAF_DIR
 echo "done"
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-echo "Starting Karaf"
+echo "Starting Karaf and waiting $KARAF_WAIT_SECS seconds"
 $KARAF_DIR/bin/start
-sleep 60
+sleep $KARAF_WAIT_SECS
 echo "done"
