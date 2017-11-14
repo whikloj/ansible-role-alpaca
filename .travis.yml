@@ -3,8 +3,11 @@ language: python
 python: "2.7"
 
 env:
-  - KARAF_VERSION="4.0.8"
-  - KARAF_DIR="/opt/karaf"
+  - KARAF_VERSION="4.0.8" KARAF_DIR="/opt/karaf"
+  
+#branches:
+#  only:
+#    - /^master/
 
 before_install:
   # Make sure everything's up to date.
